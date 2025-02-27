@@ -84,12 +84,12 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                             keyboardType: TextInputType.name,
                             textInputAction: TextInputAction.next,
                             decoration: const InputDecoration(
-                              labelText: 'Name',
+                              labelText: 'Nama',
                               border: OutlineInputBorder(),
                             ),
                             validator: (value) {
                               if (value!.isEmpty) {
-                                return 'Name is required';
+                                return 'Name harus di isi!';
                               }
                               return null;
                             },
@@ -105,7 +105,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                             ),
                             validator: (value) {
                               if (value!.isEmpty) {
-                                return 'Email is required';
+                                return 'Email harus di isi !';
                               }
                               return null;
                             },
@@ -121,7 +121,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                             ),
                             validator: (value) {
                               if (value!.isEmpty) {
-                                return 'Password is required';
+                                return 'Password harus di isi!';
                               }
                               return null;
                             },
@@ -130,12 +130,12 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                           TextFormField(
                             controller: _dateController,
                             decoration: const InputDecoration(
-                              labelText: 'Date of Birth',
+                              labelText: 'Tanggal Lahir',
                               border: OutlineInputBorder(),
                             ),
                             validator: (value) {
                               if (value!.isEmpty) {
-                                return 'Date is required';
+                                return 'Tanggal Lahir harus di isi!';
                               }
                               return null;
                             },
@@ -147,12 +147,12 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                             controller: _countryController,
                             focusNode: _countryFocusNode,
                             decoration: const InputDecoration(
-                              labelText: 'Country/Region',
+                              labelText: 'Negara/Wilayah',
                               border: OutlineInputBorder(),
                             ),
                             validator: (value) {
                               if (value!.isEmpty) {
-                                return 'Country is required';
+                                return 'Negara harus di isi!';
                               }
                               return null;
                             },
@@ -183,14 +183,14 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                                 ScaffoldMessenger.of(context).showSnackBar(
                                   SnackBar(
                                     content:
-                                        Text('Please fill the required fields'),
+                                        Text('Silakan isi kolom yang diperlukan'),
                                     duration: Duration(seconds: 2),
                                   ),
                                 );
                               }
                             },
                             child: Text(
-                              'Save Change',
+                              'Simpan Perubahan',
                               style: TextStyle(color: Colors.white),
                             ),
                           ),
@@ -237,7 +237,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
 
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
-        content: Text('Form submitted successfully!'),
+        content: Text('Formulir berhasil dikirim!'),
         duration: Duration(seconds: 2),
       ),
     );

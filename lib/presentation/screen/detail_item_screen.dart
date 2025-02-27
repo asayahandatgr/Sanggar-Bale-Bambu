@@ -85,7 +85,7 @@ class DetailItemScreen extends StatelessWidget {
                           style: TextStyle(fontSize: 18),
                         ),
                         Text(
-                          'See Review',
+                          'Lihat Ulasan',
                           style: TextStyle(
                             color: Theme.of(context).primaryColor,
                           ),
@@ -101,7 +101,7 @@ class DetailItemScreen extends StatelessWidget {
                     ),
                     const SizedBox(height: 50),
                     const Text(
-                      'Booking',
+                      'Pemesanan',
                       style: TextStyle(
                         fontSize: 26,
                         fontWeight: FontWeight.bold,

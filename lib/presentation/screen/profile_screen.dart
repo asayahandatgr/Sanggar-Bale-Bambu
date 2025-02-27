@@ -161,7 +161,7 @@ class _ProfileScreenState extends State<ProfileScreen>
                             ),
                             onPressed: () {},
                             child: const Text(
-                              'Add Friends',
+                              'Tambahkan Teman',
                               style: TextStyle(color: Colors.white),
                             ),
                           ),
@@ -175,8 +175,8 @@ class _ProfileScreenState extends State<ProfileScreen>
                   indicatorColor: Theme.of(context).primaryColor,
                   controller: _tabController,
                   tabs: <Widget>[
-                    Tab(child: Text('Photos')),
-                    Tab(child: Text('Likes')),
+                    Tab(child: Text('Foto')),
+                    Tab(child: Text('Like')),
                   ],
                 ),
                 const SizedBox(height: 10),

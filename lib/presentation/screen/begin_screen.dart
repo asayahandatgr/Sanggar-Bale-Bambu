@@ -49,7 +49,7 @@ class BeginScreen extends StatelessWidget {
                     shadowColor: Colors.grey.withOpacity(0.5),
                   ),
                   child: const Text(
-                    'Sign Up',
+                    'Daftar',
                     style: TextStyle(color: Colors.black),
                   ),
                 ),
@@ -57,7 +57,7 @@ class BeginScreen extends StatelessWidget {
                 RichText(
                   textAlign: TextAlign.center,
                   text: TextSpan(
-                    text: 'Have an account? ',
+                    text: 'Sudah memiliki akun? ',
                     style: const TextStyle(
                       color: Colors.black,
                       fontSize: 16,

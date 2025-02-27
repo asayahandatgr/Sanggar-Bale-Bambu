@@ -80,7 +80,7 @@ class LoginScreen extends StatelessWidget {
                 ),
                 child: const Center(
                   child: Text(
-                    'Sign In',
+                    'Masuk',
                     style: TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
@@ -91,7 +91,7 @@ class LoginScreen extends StatelessWidget {
               ),
               const SizedBox(height: 30),
               const Text(
-                'Or continue with',
+                'Atau lanjutkan dengan',
                 style: TextStyle(fontSize: 20),
                 textAlign: TextAlign.center,
               ),
@@ -108,14 +108,14 @@ class LoginScreen extends StatelessWidget {
               RichText(
                 textAlign: TextAlign.center,
                 text: TextSpan(
-                  text: 'Don\'t have an account? ',
+                  text: 'Belum memiliki Akun?',
                   style: const TextStyle(
                     color: Colors.black,
                     fontSize: 16,
                   ),
                   children: [
                     TextSpan(
-                      text: 'SignUp',
+                      text: 'Daftar',
                       style: const TextStyle(
                         color: Colors.blue,
                         fontWeight: FontWeight.bold,

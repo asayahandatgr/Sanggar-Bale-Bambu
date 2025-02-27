@@ -41,7 +41,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
             ),
           ),
           title: const Text(
-            'Sign Up',
+            'Daftar',
             style: TextStyle(
               fontWeight: FontWeight.bold,
             ),
@@ -61,10 +61,10 @@ class _SignUpScreenState extends State<SignUpScreen> {
                     keyboardType: TextInputType.name,
                     textInputAction: TextInputAction.next,
                     decoration: const InputDecoration(
-                      labelText: 'Name',
+                      labelText: 'Nama',
                       border: OutlineInputBorder(),
                     ),
-                    validator: (value) => _viewmodel.validator(value, 'Name'),
+                    validator: (value) => _viewmodel.validator(value, 'Nama'),
                   ),
                   Row(
                     spacing: 10,
@@ -87,11 +87,11 @@ class _SignUpScreenState extends State<SignUpScreen> {
                           keyboardType: TextInputType.phone,
                           textInputAction: TextInputAction.next,
                           decoration: const InputDecoration(
-                            labelText: 'Phone no.',
+                            labelText: 'No Hp.',
                             border: OutlineInputBorder(),
                           ),
                           validator: (value) =>
-                              _viewmodel.validator(value, 'Phone no.'),
+                              _viewmodel.validator(value, 'No Hp.'),
                         ),
                       ),
                     ],
@@ -113,12 +113,12 @@ class _SignUpScreenState extends State<SignUpScreen> {
                           controller: _birthDateController,
                           readOnly: true,
                           decoration: const InputDecoration(
-                            labelText: 'Birth Date',
+                            labelText: 'Tanggal Lahir',
                             border: OutlineInputBorder(),
                             suffixIcon: Icon(Icons.calendar_month),
                           ),
                           validator: (value) =>
-                              _viewmodel.validator(value, 'Birth Date'),
+                              _viewmodel.validator(value, 'Tanggal Lahir'),
                           onTap: () async {
                             DateTime? pickedDate = await showDatePicker(
                               context: context,
@@ -140,10 +140,10 @@ class _SignUpScreenState extends State<SignUpScreen> {
                         flex: 5,
                         child: DropdownButtonFormField(
                           decoration: const InputDecoration(
-                            labelText: 'Gender',
+                            labelText: 'Jenis Kelamin',
                             border: OutlineInputBorder(),
                           ),
-                          items: ['Male', 'Female']
+                          items: ['Laki-laki', 'Perempuan']
                               .map((gender) => DropdownMenuItem(
                                     value: gender,
                                     child: Text(gender),
@@ -155,14 +155,14 @@ class _SignUpScreenState extends State<SignUpScreen> {
                             });
                           },
                           validator: (value) =>
-                              value == null ? 'Please select a gender' : null,
+                              value == null ? 'Silahkan pilih Jenis Kelamin' : null,
                         ),
                       ),
                     ],
                   ),
                   DropdownButtonFormField(
                     decoration: const InputDecoration(
-                      labelText: 'Country',
+                      labelText: 'Negara',
                       border: OutlineInputBorder(),
                     ),
                     items: [
@@ -183,17 +183,17 @@ class _SignUpScreenState extends State<SignUpScreen> {
                       });
                     },
                     validator: (value) =>
-                        value == null ? 'Please select a country' : null,
+                        value == null ? 'Silahkan pilih Negara' : null,
                   ),
                   TextFormField(
                     keyboardType: TextInputType.streetAddress,
                     textInputAction: TextInputAction.next,
                     decoration: const InputDecoration(
-                      labelText: 'Address',
+                      labelText: 'Alamat',
                       border: OutlineInputBorder(),
                     ),
                     validator: (value) =>
-                        _viewmodel.validator(value, 'Address'),
+                        _viewmodel.validator(value, 'Alamat'),
                   ),
                   TextFormField(
                     focusNode: _passwordFocusNode,
@@ -220,7 +220,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                         ScaffoldMessenger.of(context).showSnackBar(
                           const SnackBar(
                             content:
-                                Text('Please fill in all the required fields.'),
+                                Text('Harap isi semua kolom yang diperlukan.'),
                           ),
                         );
                       }
@@ -233,7 +233,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                       ),
                     ),
                     child: const Text(
-                      'Sign Up',
+                      'Daftar',
                       style: TextStyle(
                         color: Colors.black,
                         fontSize: 20,
